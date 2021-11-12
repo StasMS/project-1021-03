@@ -1,0 +1,232 @@
+/* Шрифты
+Roboto
+400
+500
+700
+900
+
+/*letter-spacing
+Логотип: letter-spacing: 0.03em;
+Меню навигации: letter-spacing: 0.02em;
+Герой: letter-spacing: 0.06em; */
+/*Преимущества:letter-spacing: 0.06em;
+Виды работ: letter-spacing: 0.03em;
+Наша команда: letter-spacing: 0.03em;
+Раздел ПОРТФОЛИО: кнопки навигации по работам: letter-spacing: 0.03em;*/
+
+/* Цвета главной страницы */
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* цвет логотипа #2196F3 */
+/* основной цвет фона (в т.ч. панели навигации) белый #FFFFFF */
+/* вторичный цвет фона #F5F4FA */
+/* цвет выделения синий #2196F3 */
+/* цвет адреса белый #FFFFFF */
+/* цвет емейла и телефона в футере rgba(255, 255, 255, 0.6) */
+
+/* Цвета портфолио */
+/* Шапка и футер так же как и на главной странице */
+/* Меню навигации по видам работ: */
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+
+/* Основные цвета */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --background-color: #ffffff;
+  --title-button-color: #f5f4fa;
+}
+
+/* Главная страница */
+.page {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, Raleway, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Убрал выделение нумерации */
+.list {
+  list-style: none;
+}
+
+/* Site navigation */
+
+/*.site-nav {
+}
+*/
+
+.logo {
+  font-family: Raleway, sans-serif;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo .logo-span {
+  color: var(--accent-text-color);
+}
+
+.site-nav,
+.contact-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.contact-nav .link:hover,
+.site-nav .link:focus,
+.contact-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Contact navigation */
+
+.contact-nav .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+/* Hero section */
+
+.hero {
+  letter-spacing: 0.06em;
+}
+
+.hero-title {
+  color: var(--background-color);
+  /* временный цвет фона */
+  background-color: var(--title-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Button */
+.button {
+  color: var(--background-color);
+  background-color: var(--accent-text-color);
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Кнопка героя */
+.hero .div-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+}
+
+/* Основные преимущества */
+
+/* Section title */
+.section-title {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Advantages */
+.section-our-advantages {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* Our-work-title */
+.our-work-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+/* Our team */
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+/* Соцсети команды */
+.list .link {
+  text-decoration: none;
+}
+
+/* Footer */
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--background-color);
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-text-color);
+}
+
+.address .link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+/* Портфолио */
+
+/* Portfolio navigation */
+
+/* Button */
+.title-button {
+  background-color: var(--title-button-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+}
+
+.portfolio-nav .title-button:hover,
+.portfolio-nav .title-button:focus {
+  color: var(--background-color);
+  background-color: var(--accent-text-color);
+}
+.portfolio-nav h3 {
+  letter-spacing: 0.06em;
+}
+
+.work-name-title {
+  font-size: 18px;
+  line-height: 2;
+  color: var(--title-text-color);
+}
+
+.work-name-list {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
+}
