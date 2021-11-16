@@ -30,6 +30,16 @@ Roboto
 /* цвет основного текста #212121 */
 /* вторичный цвет текста #757575 */
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* Основные цвета */
 :root {
   --primary-text-color: #757575;
@@ -45,6 +55,7 @@ Roboto
   color: var(--primary-text-color);
   font-family: Roboto, Raleway, sans-serif;
   letter-spacing: 0.03em;
+  /*margin: 0;*/
 }
 
 /* Убрал выделение нумерации */
@@ -125,11 +136,19 @@ Roboto
 
 /* Кнопка героя */
 .hero .div-button {
+  text-align: center;
+}
+
+.hero .button {
+  letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
-  text-align: center;
+  width: 200px;
+  height: 50px;
+  /*border: 0px;*/
+  border-radius: 4px;
 }
 
 /* Основные преимущества */
