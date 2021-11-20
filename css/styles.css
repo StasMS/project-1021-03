@@ -58,8 +58,19 @@ html {
   /*margin: 0;*/
 }
 
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid rgb(175, 34, 218);
+}
+
 /* Убрал выделение нумерации */
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -84,6 +95,7 @@ html {
 
 .site-nav,
 .contact-nav {
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -113,16 +125,22 @@ html {
 
 .hero {
   letter-spacing: 0.06em;
+  text-align: center;
+  margin-bottom: 89px;
+  background-color: var(--title-text-color);
+  outline: 2px solid rgb(175, 34, 218);
 }
 
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 40px;
   color: var(--background-color);
   /* временный цвет фона */
-  background-color: var(--title-text-color);
+  /*background-color: var(--title-text-color);*/
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  /*text-align: center;*/
   text-transform: uppercase;
 }
 
@@ -134,20 +152,20 @@ html {
   cursor: pointer;
 }
 
-/* Кнопка героя */
+/* Кнопка героя
 .hero .div-button {
   text-align: center;
-}
+}*/
 
 .hero .button {
+  min-width: 200px;
+  padding: 10px 32px;
+  margin-bottom: 205px;
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  /*border: 0px;*/
+  /*align-items: center;*/
   border-radius: 4px;
 }
 
@@ -155,6 +173,9 @@ html {
 
 /* Section title */
 .section-title {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.14;
@@ -163,12 +184,16 @@ html {
 
 /* Advantages */
 .section-our-advantages {
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 1.71;
 }
 /* Our-work-title */
 .our-work-title,
 .team-title {
+  padding: 0;
+  margin: 0;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -177,6 +202,8 @@ html {
 
 /* Our team */
 .team-name {
+  padding: 0;
+  margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -185,6 +212,8 @@ html {
 }
 
 .team-position {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -220,6 +249,10 @@ html {
 
 /* Button */
 .title-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
   background-color: var(--title-button-color);
   font-family: inherit;
   font-weight: 500;
@@ -239,12 +272,16 @@ html {
 }
 
 .work-name-title {
+  padding: 0;
+  margin: 0;
   font-size: 18px;
   line-height: 2;
   color: var(--title-text-color);
 }
 
 .work-name-list {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
