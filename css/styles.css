@@ -30,16 +30,6 @@ Roboto
 /* цвет основного текста #212121 */
 /* вторичный цвет текста #757575 */
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 /* Основные цвета */
 :root {
   --primary-text-color: #757575;
@@ -55,11 +45,11 @@ html {
   color: var(--primary-text-color);
   font-family: Roboto, Raleway, sans-serif;
   letter-spacing: 0.03em;
-  /*margin: 0;*/
+  margin: 0;
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -124,6 +114,11 @@ html {
 /* Hero section */
 
 .hero {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   letter-spacing: 0.06em;
   text-align: center;
   margin-bottom: 89px;
@@ -144,32 +139,30 @@ html {
   text-transform: uppercase;
 }
 
-/* Button */
-.button {
+/* Кнопка героя*/
+.button.primary {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  margin-bottom: 205px;
+  border: 1px solid transparent;
+  border-radius: 4px;
   color: var(--background-color);
   background-color: var(--accent-text-color);
   font-family: inherit;
   cursor: pointer;
-}
-
-/* Кнопка героя
-.hero .div-button {
-  text-align: center;
-}*/
-
-.hero .button {
-  min-width: 200px;
-  padding: 10px 32px;
-  margin-bottom: 205px;
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   /*align-items: center;*/
-  border-radius: 4px;
 }
 
 /* Основные преимущества */
+
+.section.bottom {
+  margin-bottom: 92px;
+}
 
 /* Section title */
 .section-title {
