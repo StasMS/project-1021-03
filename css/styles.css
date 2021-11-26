@@ -48,6 +48,10 @@ Roboto
   margin: 0;
 }
 
+.header .container {
+  margin-bottom: 32px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -117,6 +121,7 @@ Roboto
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 89px;
   padding-left: 15px;
   padding-right: 15px;
   letter-spacing: 0.06em;
@@ -139,21 +144,25 @@ Roboto
   text-transform: uppercase;
 }
 
+/*Кнопка*/
+.button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 /* Кнопка героя*/
 .button.primary {
-  display: inline-block;
   min-width: 200px;
   padding: 10px 32px;
   margin-bottom: 205px;
-  border: 1px solid transparent;
-  border-radius: 4px;
   color: var(--background-color);
   background-color: var(--accent-text-color);
-  font-family: inherit;
-  cursor: pointer;
   letter-spacing: 0.06em;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.87;
   /*align-items: center;*/
 }
@@ -182,8 +191,26 @@ Roboto
   font-size: 14px;
   line-height: 1.71;
 }
+
+/* Our work */
+.container.our-work {
+  margin-bottom: 94px;
+}
+
 /* Our-work-title */
-.our-work-title,
+.our-work-title {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+/* Our team */
 .team-title {
   padding: 0;
   margin: 0;
@@ -192,8 +219,6 @@ Roboto
   text-align: center;
   color: var(--title-text-color);
 }
-
-/* Our team */
 .team-name {
   padding: 0;
   margin: 0;
@@ -241,27 +266,19 @@ Roboto
 /* Portfolio navigation */
 
 /* Button */
-.title-button {
-  display: inline-block;
-  border-radius: 4px;
-  padding: 6px 22px;
+.button.secondary {
   min-width: 73px;
+  padding: 6px 22px;
   background-color: var(--title-button-color);
-  font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
-  text-align: center;
-  cursor: pointer;
+  /*text-align: center;*/
 }
 
-.portfolio-nav .title-button:hover,
-.portfolio-nav .title-button:focus {
+.portfolio-nav .button.secondary:hover,
+.portfolio-nav .button.secondary:focus {
   color: var(--background-color);
   background-color: var(--accent-text-color);
-}
-.portfolio-nav h3 {
-  letter-spacing: 0.06em;
 }
 
 .work-name-title {
@@ -269,6 +286,7 @@ Roboto
   margin: 0;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
