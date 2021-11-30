@@ -39,6 +39,13 @@ Roboto
   --title-button-color: #f5f4fa;
 }
 
+/* Убрал выделение нумерации */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 /* Главная страница */
 .page {
   background-color: var(--background-color);
@@ -49,7 +56,10 @@ Roboto
 }
 
 .header .container {
+  display: flex;
   margin-bottom: 32px;
+  align-items: center;
+  /*justify-content: space-between;*/
 }
 
 .container {
@@ -61,18 +71,11 @@ Roboto
   outline: 2px solid rgb(175, 34, 218);
 }
 
-/* Убрал выделение нумерации */
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 /* Site navigation */
-
-/*.site-nav {
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
-*/
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -87,9 +90,26 @@ Roboto
   color: var(--accent-text-color);
 }
 
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.contact-nav .item + .item {
+  margin-left: 50px;
+}
+
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+
 .site-nav,
 .contact-nav {
-  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -97,8 +117,11 @@ Roboto
 }
 
 .site-nav .link {
+  display: block;
   color: var(--title-text-color);
   text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .site-nav .link:hover,
@@ -111,8 +134,11 @@ Roboto
 /* Contact navigation */
 
 .contact-nav .link {
+  display: block;
   color: var(--primary-text-color);
   text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Hero section */
@@ -140,7 +166,6 @@ Roboto
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /*text-align: center;*/
   text-transform: uppercase;
 }
 
@@ -164,7 +189,6 @@ Roboto
   letter-spacing: 0.06em;
   font-weight: 700;
   line-height: 1.87;
-  /*align-items: center;*/
 }
 
 /* Основные преимущества */
@@ -219,6 +243,7 @@ Roboto
   text-align: center;
   color: var(--title-text-color);
 }
+
 .team-name {
   padding: 0;
   margin: 0;
