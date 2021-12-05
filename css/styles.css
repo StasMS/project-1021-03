@@ -46,6 +46,16 @@ Roboto
   list-style: none;
 }
 
+/*Контейнер*/
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid rgb(175, 34, 218);
+}
+
 /* Главная страница */
 .page {
   background-color: var(--background-color);
@@ -55,20 +65,13 @@ Roboto
   margin: 0;
 }
 
-.header .container {
-  display: flex;
-  margin-bottom: 32px;
-  align-items: center;
-  /*justify-content: space-between;*/
+.header {
+  min-height: 80px;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid rgb(175, 34, 218);
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 /* Site navigation */
@@ -120,8 +123,8 @@ Roboto
   display: block;
   color: var(--title-text-color);
   text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -152,7 +155,6 @@ Roboto
   padding-right: 15px;
   letter-spacing: 0.06em;
   text-align: center;
-  margin-bottom: 89px;
   background-color: var(--title-text-color);
   outline: 2px solid rgb(175, 34, 218);
 }
@@ -160,6 +162,7 @@ Roboto
 .hero-title {
   margin-top: 0px;
   margin-bottom: 40px;
+  padding-top: 200px;
   color: var(--background-color);
   /* временный цвет фона */
   /*background-color: var(--title-text-color);*/
@@ -194,7 +197,28 @@ Roboto
 /* Основные преимущества */
 
 .section.bottom {
-  margin-bottom: 92px;
+  margin-bottom: 94px;
+}
+
+/*Advantages.Container*/
+/*.advantages.container {
+}*/
+
+/*Advantages-list*/
+.advantages-list {
+  display: flex;
+  /*flex-wrap: wrap;*/
+}
+
+/*Advantages-list.item*/
+.advantages-list > .item {
+  width: calc ((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+/*Убираю справа маржин*/
+.advantages-list > .item:nth-child(4n) {
+  margin-right: 0;
 }
 
 /* Section title */
@@ -209,7 +233,7 @@ Roboto
 }
 
 /* Advantages */
-.section-our-advantages {
+.text-our-advantages {
   padding: 0;
   margin: 0;
   font-size: 14px;
@@ -218,14 +242,38 @@ Roboto
 
 /* Our work */
 .container.our-work {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 94px;
+  text-align: center;
 }
 
 /* Our-work-title */
 .our-work-title {
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--title-text-color);
+}
+
+/*Our-work-list*/
+.our-work-list {
+  display: flex;
+}
+
+.our-work-list > .item {
+  width: calc ((100% - 60px) / 3);
+  margin-right: 30px;
+}
+
+.our-work-list > .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* Our team */
+.team-title {
+  padding: 94px 0 0;
   margin-top: 0;
   margin-bottom: 50px;
   font-size: 36px;
@@ -234,19 +282,27 @@ Roboto
   color: var(--title-text-color);
 }
 
-/* Our team */
-.team-title {
-  padding: 0;
-  margin: 0;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--title-text-color);
+.team-list {
+  display: flex;
+}
+
+.team-list > .item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.team-list > .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.team-image {
+  margin-bottom: 30px;
 }
 
 .team-name {
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -256,18 +312,49 @@ Roboto
 
 .team-position {
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
 }
 
 /* Соцсети команды */
+.social-links-list {
+  display: flex;
+  background-color: #757575;
+}
 .list .link {
   text-decoration: none;
 }
 
 /* Footer */
+
+/*main-footer*/
+.main-footer {
+  display: flex;
+  padding-top: 72px;
+  background-color: var(--title-text-color);
+}
+
+/*Logo*/
+.logo .logo-footer-span {
+  color: var(--background-color);
+}
+
+/*address-container*/
+.address-container {
+  max-width: 231px;
+  padding: 0;
+  margin-right: 70px;
+}
+
+.address-container .address {
+  margin-top: 20px;
+  padding: 0;
+  background-color: tomato;
+}
+
 .address {
   font-style: normal;
   font-weight: 400;
@@ -286,9 +373,64 @@ Roboto
   text-decoration: none;
 }
 
+/*Призыв к присоединению*/
+
+/*Проверить и Добавить стили!!*/
+.join-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 70px;
+  padding: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+
+.sign-title {
+  margin: 0;
+  padding: 0;
+}
+
 /* Портфолио */
 
 /* Portfolio navigation */
+/*.portfolio-nav {
+  display: flex;
+}*/
+
+/*.main-item {
+  display: flex;
+  margin-left: 8px;
+  align-items: flex-start;
+}*/
+
+.work-name-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: teal;
+}
+
+.work-name-container > .item {
+  width: calc ((100% - 60px) / 3);
+  /*width: 370px;*/
+  border-color: tomato;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.work-name-container > .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.work-name-container > .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
 
 /* Button */
 .button.secondary {
