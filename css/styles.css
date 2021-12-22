@@ -58,8 +58,8 @@ Roboto
 
 /* Главная страница */
 .page {
-  background-color: var(--background-color);
   color: var(--primary-text-color);
+  font-style: 14px;
   font-family: Roboto, Raleway, sans-serif;
   letter-spacing: 0.03em;
   margin: 0;
@@ -160,8 +160,9 @@ Roboto
 }
 
 .hero-title {
-  margin-top: 0px;
-  margin-bottom: 40px;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 30px;
   padding-top: 200px;
   color: var(--background-color);
   /* временный цвет фона */
@@ -169,6 +170,7 @@ Roboto
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+
   text-transform: uppercase;
 }
 
@@ -271,7 +273,14 @@ Roboto
   margin-right: 0;
 }
 
+.our-work-image {
+  display: block;
+}
+
 /* Our team */
+.team.section {
+  margin-bottom: 94px;
+}
 .team-title {
   padding: 94px 0 0;
   margin-top: 0;
@@ -296,6 +305,7 @@ Roboto
 }
 
 .team-image {
+  display: block;
   margin-bottom: 30px;
 }
 
@@ -328,12 +338,51 @@ Roboto
   text-decoration: none;
 }
 
+/*Our clients*/
+
+.our-clients.section {
+  margin-bottom: 94px;
+}
+
+.our-clients-title {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.our-clients-list {
+  display: flex;
+}
+
+.our-clients-list > .item {
+  width: calc((100% - 30px) / 6);
+  margin-right: 30px;
+  outline: 2px solid rgb(175, 34, 218);
+}
+
+.our-clients-list > .item:nth-child(6n) {
+  margin-right: 0;
+}
+
 /* Footer */
 
 /*main-footer*/
 .main-footer {
   display: flex;
   padding-top: 72px;
+  align-items: baseline;
   background-color: var(--title-text-color);
 }
 
@@ -347,12 +396,12 @@ Roboto
   max-width: 231px;
   padding: 0;
   margin-right: 70px;
+  background-color: tomato;
 }
 
 .address-container .address {
   margin-top: 20px;
   padding: 0;
-  background-color: tomato;
 }
 
 .address {
@@ -377,6 +426,7 @@ Roboto
 
 /*Проверить и Добавить стили!!*/
 .join-title {
+  background-color: tomato;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
@@ -392,6 +442,11 @@ Roboto
   color: var(--background-color);
 }
 
+.button.container {
+  background-color: tomato;
+  margin-left: auto;
+}
+
 .sign-title {
   margin: 0;
   padding: 0;
@@ -399,16 +454,40 @@ Roboto
 
 /* Портфолио */
 
-/* Portfolio navigation */
-/*.portfolio-nav {
+/*portfolio header*/
+
+.portfolio.header {
+  margin-bottom: 94px;
+}
+
+/*Main*/
+
+.portfolio.main {
+  margin-bottom: 94px;
+}
+
+/*.portfolio.container {
   display: flex;
 }*/
 
-/*.main-item {
+/* Portfolio navigation */
+.portfolio-nav {
   display: flex;
-  margin-left: 8px;
-  align-items: flex-start;
-}*/
+  margin-bottom: 30px;
+  justify-content: center;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+}
+
+.portfolio-nav > .main-item {
+  width: calc((100% - 592px) / 5);
+  margin-right: 8px;
+  outline: 2px solid royalblue;
+}
+
+.portfolio-nav > .main-item:nth-child(5n) {
+  margin-right: 0;
+}
 
 .work-name-container {
   display: flex;
@@ -434,8 +513,8 @@ Roboto
 
 /* Button */
 .button.secondary {
-  min-width: 73px;
-  padding: 6px 22px;
+  /* min-width: 73px; */
+  /* padding: 6px 22px; */
   background-color: var(--title-button-color);
   font-weight: 500;
   line-height: 1.62;
