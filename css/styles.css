@@ -1,3 +1,5 @@
+/*ДОДЕЛАЙ ФУТЕР и ШРИФТЫ!!!*/
+
 /* Шрифты
 Roboto
 400
@@ -72,6 +74,7 @@ Roboto
 .header .container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 /* Site navigation */
@@ -424,16 +427,33 @@ Roboto
 
 /*Призыв к присоединению*/
 
+/*join-container*/
+.join-container {
+  margin-left: 0;
+  margin-right: 93px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* Временный фон ссылок */
+.join-container .social-links-list {
+  background-color: var(--title-text-color);
+}
+
+/* Временный цвет ссылок */
+.join-container .link {
+  color: var(--title-button-color);
+}
+
 /*Проверить и Добавить стили!!*/
 .join-title {
   background-color: tomato;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   margin-left: 0;
-  margin-right: 70px;
+  margin-right: 0;
   padding: 0;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -442,33 +462,61 @@ Roboto
   color: var(--background-color);
 }
 
-.button.container {
-  background-color: tomato;
-  margin-left: auto;
-}
-
-.sign-title {
+.sign-container {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
 
-/* Портфолио */
-
-/*portfolio header*/
-
-.portfolio.header {
-  margin-bottom: 94px;
+.sign-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  color: var(--title-button-color);
+  background-color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
+
+/* кнопка "подписаться" */
+.sign-button {
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 10px 62px 10px 29px;
+  background-color: var(--accent-text-color);
+  color: var(--title-button-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 187% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/*ПОРТФОЛИО*/
 
 /*Main*/
-
-.portfolio.main {
-  margin-bottom: 94px;
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-/*.portfolio.container {
-  display: flex;
-}*/
+.portfolio.container {
+  margin: 0 auto;
+  /* margin-top: 94px;
+  margin-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto; */
+}
 
 /* Portfolio navigation */
 .portfolio-nav {
@@ -479,28 +527,36 @@ Roboto
   margin-right: 100px; */
 }
 
-.portfolio-nav > .main-item {
-  width: calc((100% - 592px) / 5);
+/*.portfolio-nav > .main-item {
+  width: calc((100% - 592px) / 5);*/
+/*outline: 2px solid royalblue;
+}*/
+
+.main-item .button {
   margin-right: 8px;
-  outline: 2px solid royalblue;
 }
 
-.portfolio-nav > .main-item:nth-child(5n) {
+.main-item:last-child .button {
   margin-right: 0;
 }
+
+/*.main-item > .button {
+  display: block;
+  margin-right: 0;
+}*/
 
 .work-name-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: teal;
+  padding-top: 30px;
 }
 
 .work-name-container > .item {
   width: calc ((100% - 60px) / 3);
   /*width: 370px;*/
-  border-color: tomato;
   margin-right: 30px;
   margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .work-name-container > .item:nth-child(3n) {
@@ -514,10 +570,14 @@ Roboto
 /* Button */
 .button.secondary {
   /* min-width: 73px; */
-  /* padding: 6px 22px; */
+  padding: 6px 22px;
   background-color: var(--title-button-color);
+  color: var(--title-text-color);
+  font-style: normal;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   /*text-align: center;*/
 }
 
